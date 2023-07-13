@@ -6,6 +6,8 @@ This repository contains the code for our research paper titled "Automated Const
 
 The KGCP is divided into two main parts:
 
+
+
 1. **Extracting General and Specific Information**: We start by scraping web pages of MAKG, Wikidata, and ANU's schools to collect researcher information and their papers, thus building a rich academic paper dataset. This dataset is used to extract metadata (author names, affiliated institutions, contact information, grants, areas of expertise, etc.), paper content, and general named entities (like people, nationalities, locations, etc.). All the extracted data is used to enrich the existing ASKG.
 
 2. **Extracting Domain-specific Knowledge**: Here, the focus is on computer science (CS) papers. We use a paper statistical analyser to identify all CS-related papers from the dataset, which then forms our target paper list. These papers are processed according to the IMRaD (Introduction, Methods, Results, and Discussion) format for identification and division. We use several Transformer-based NER models like RoBERTa, SciBERT, and LinkBERT, etc., to extract academic entities related to computer science.
